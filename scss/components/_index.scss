@@ -123,20 +123,23 @@ main {
 
                         button:hover {
                             background-color: $color-2;
-                            color: nth($color-generales,2);
+                            color: nth($color-generales, 2);
                         }
                     }
                 }
             }
+
             #btn-popup:checked~.popup__container {
                 opacity: 1;
                 visibility: visible;
                 transform: translateY(0%);
-                .ventana__emergente-popup{
+
+                .ventana__emergente-popup {
                     transform: translateY(0%);
                 }
             }
-            #btn-popup{
+
+            #btn-popup {
                 display: none;
             }
         }
