@@ -1,0 +1,72 @@
+// COLORES
+
+$color-1: rgb(138, 43, 226);
+$color-2: rgb(212, 2, 90);
+$Color-3: rgb(125, 2, 247);
+
+$color-generales: rgb(0, 0, 0),
+    rgb(255, 255, 255),
+    rgb(1, 1, 160),
+    rgb(144, 6, 6),
+    rgb(0, 176, 176),
+    rgb(220, 20, 60);
+
+
+// MEDIDAS
+
+$m-100: 100%;
+
+$medida-generales: 1rem,
+    1.5rem,
+    2rem,
+    2.5rem,
+    3rem;
+
+// EXTENDS
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+// MIXIN
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// CONDICIONALES
+
+@mixin botones ($btn-hover) {
+    @if $btn-hover == $color-1{
+        padding: 0.5rem;
+        border: none;
+        color: nth($color-generales, 1);
+        background: $color-1;
+        border-radius: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: .3s ease all;
+    }
+
+    @else {
+        background-color: rgb(255, 255, 255);
+        color: $color-1;
+        transform: scale(1.06);
+    }
+}

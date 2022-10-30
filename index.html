@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Berthe Indumentaria</title>
 </head>
 
@@ -14,7 +15,7 @@
         <header>
             <div class="header__cuotas">
                 <h4>
-                    Compra en <span>3</span> y <span>6</span> cuotas sin interes en toda la tienda
+                    Compra en <span><em>3</em></span> y <span><em>6</em></span> cuotas sin interes en toda la tienda
                 </h4>
                 <img src="./img/visa.png" alt="">
                 <img src="./img/MasterCard_early_1990s_logo.png" alt="">
@@ -35,15 +36,30 @@
             </nav>
         </header>
         <main>
-            <div class="hero">
+            <section class="hero">
                 <div class="hero__text">
                     <h1>Si queres recibir informacion</h1>
                     <h2>de tus marcas favoritas</h2>
                 </div>
                 <div class="hero__boton">
-                    <a href=""><input type="button" value="DEJANOS TU MAIL AQUI"></a>
+                    <input type="checkbox" id="btn-popup">
+                    <label for="btn-popup" class="btn__abrir-popup">DEJANOS TU MAIL</label>
+
+                    <div class="popup__container">
+                        <div class="ventana__emergente-popup">
+                            <h3>SUSCRIBETE</h3>
+                            <label for="btn-popup">X</label>
+                            <div class="popup__contenido">
+                                <input type="text" placeholder="Nombre">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="ventana__emergente-boton">
+                                <button>ENVIAR</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
 
