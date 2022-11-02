@@ -16,6 +16,12 @@ $color-generales: rgb(0, 0, 0),
 
 $m-100: 100%;
 
+$h1: 4rem;
+
+$h2: 3rem;
+
+$h3: 2rem;
+
 $medida-generales: 1rem,
     1.5rem,
     2rem,
@@ -28,6 +34,13 @@ $medida-generales: 1rem,
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+%flex_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 %flex-col {
@@ -65,8 +78,8 @@ $medida-generales: 1rem,
     }
 
     @else {
-        background-color: rgb(255, 255, 255);
-        color: $color-1;
+        background-color: $color-2;
+        color: nth($color-generales, 2);
         transform: scale(1.06);
     }
 }

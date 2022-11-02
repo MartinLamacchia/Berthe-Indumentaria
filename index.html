@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Berthe Indumentaria</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="layaut__container">
         <header>
             <div class="header__cuotas">
                 <h4>
@@ -43,7 +44,6 @@
                 <div class="hero__boton">
                     <input type="checkbox" id="btn-popup">
                     <label for="btn-popup" class="btn__abrir-popup">DEJANOS TU MAIL</label>
-
                     <div class="popup__container">
                         <div class="ventana__emergente-popup">
                             <h3>SUSCRIBETE</h3>
@@ -59,10 +59,82 @@
                     </div>
                 </div>
             </section>
+            <section class="destacados__container">
+                <h2>Destacados del Mes</h2>
+                <div class="destacados">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </section>
+            <!-- BOOSTRAP -->
+            <section>
+                <div id="carouselExampleSlidesOnly" class="carousel slide t-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/carusel-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/carusel-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/carusel-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card__contenedor-general">
+                <h2>Nuestra Coleccion</h2>
+                <div class="card__container-grid">
+                    <div class="card__1">
+                        <a href="./pages/remeras.html">
+                            <img src="./img/remeras-index.jpg" alt="" class="card__picture">
+                            <h3>REMERAS</h3>
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                    <div class="card__2">
+                        <a href="./pages/pantalones.html">
+                            <img src="./img/pantalones-index.jpg" alt="" class="card__picture">
+                            <h3>PANTALONES</h3>
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                    <div class="card__3">
+                        <a href="./pages/buzos.html">
+                            <img src="./img/buzos-index.jpg" alt="" class="card__picture">
+                            <h3>BUZOS</h3>
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                    <div class="card__4">
+                        <a href="./pages/camperas.html">
+                            <img src="./img/campera-index.jpg" alt="" class="card__picture">
+                            <h3>CAMPERAS</h3>
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                    <div class="card__5">
+                        <a href="./pages/shorts.html">
+                            <img src="./img/shorts-index.jpg" alt="" class="card__picture">
+                            <h3>SHORTS</h3>
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                    <div class="card__6">
+                        <a href="./pages/accesorios.html">
+                            <img src="./img/Accesorios.jpg" alt="" class="card__picture">
+                            <h3>ACCESORIOS</h3>
+                            <button>VER MAS</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
 
         </footer>
+        <script src="./js/bootstrap.min.js"></script>
     </div>
 </body>
 

@@ -11,7 +11,7 @@ main {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.4),
                 rgba(0, 0, 0, 0.4)),
-            url(../img/pexels-mart-production-7679474.jpg);
+            url(../img/hero-index.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
@@ -31,13 +31,13 @@ main {
             h1 {
                 color: rgb(181, 95, 243);
                 text-transform: uppercase;
-                font-size: 4rem;
+                font-size: $h1;
             }
 
             h2 {
                 color: rgb(181, 95, 243);
                 text-transform: uppercase;
-                font-size: 2.5rem;
+                font-size: $h2;
             }
         }
 
@@ -71,7 +71,7 @@ main {
 
                 .ventana__emergente-popup {
                     width: 25rem;
-                    height: 18rem;
+                    height: 19rem;
                     background: #ffffff;
                     box-shadow: 11px 10px 22px 8px rgba(0, 0, 0, 0.71);
                     -webkit-box-shadow: 11px 10px 22px 8px rgba(0, 0, 0, 0.71);
@@ -82,7 +82,7 @@ main {
 
                     h3 {
                         text-align: center;
-                        font-size: 2rem;
+                        font-size: $h3;
                         margin-top: 2.5rem;
                     }
 
@@ -141,6 +141,197 @@ main {
 
             #btn-popup {
                 display: none;
+            }
+        }
+    }
+
+    .destacados__container{
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        width: 100%;
+        @extend %flex;
+        h2{
+            font-size: $h2;
+        }
+    }
+
+    .card__contenedor-general {
+        h2 {
+            font-size: $h2;
+            text-align: center;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        .card__container-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 35rem 40rem;
+            gap: 3rem 0;
+            grid-template-areas:
+                "card__1 card__2 card__3"
+                "card__4 card__5 card__6";
+
+            .card__1 {
+                a{
+                    @extend %flex_2;
+                    text-decoration: none;
+
+                    .card__picture {
+                        width: 20rem;
+                        height: 25rem;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 0 0 10% 0;
+                        
+                    }
+                    h3{
+                        color: black;
+                        font-size: $h3;
+                        margin: 1rem 0rem;
+                    }
+                    button{
+                        @include botones ($color-1);
+                        &:hover{
+                            @include botones ($color-2);
+                        }
+                    }
+                }
+            }
+
+            .card__2 {
+                a{
+                    @extend %flex_2;
+                    text-decoration: none;
+
+                    .card__picture {
+                        width: 20rem;
+                        height: 25rem;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 0 0 10% 0;
+                        
+                    }
+                    h3{
+                        color: black;
+                        font-size: $h3;
+                        margin: 1rem 0rem;
+                    }
+                    button{
+                        @include botones ($color-1);
+                        &:hover{
+                            @include botones ($color-2);
+                        }
+                    }
+                }
+            }
+
+            .card__3 {
+                a{
+                    @extend %flex_2;
+                    text-decoration: none;
+
+                    .card__picture {
+                        width: 20rem;
+                        height: 25rem;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 0 0 10% 0;
+                        
+                    }
+                    h3{
+                        color: black;
+                        font-size: $h3;
+                        margin: 1rem 0rem;
+                    }
+                    button{
+                        @include botones ($color-1);
+                        &:hover{
+                            @include botones ($color-2);
+                        }
+                    }
+                }
+            }
+
+            .card__4 {
+                a{
+                    @extend %flex_2;
+                    text-decoration: none;
+
+                    .card__picture {
+                        width: 20rem;
+                        height: 25rem;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 0 0 10% 0;
+                        
+                    }
+                    h3{
+                        color: black;
+                        font-size: $h3;
+                        margin: 1rem 0rem;
+                    }
+                    button{
+                        @include botones ($color-1);
+                        &:hover{
+                            @include botones ($color-2);
+                        }
+                    }
+                }
+            }
+
+            .card__5 {
+                a{
+                    @extend %flex_2;
+                    text-decoration: none;
+
+                    .card__picture {
+                        width: 20rem;
+                        height: 25rem;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 0 0 10% 0;
+                        
+                    }
+                    h3{
+                        color: black;
+                        font-size: $h3;
+                        margin: 1rem 0rem;
+                    }
+                    button{
+                        @include botones ($color-1);
+                        &:hover{
+                            @include botones ($color-2);
+                        }
+                    }
+                }
+            }
+
+            .card__6 {
+                a{
+                    @extend %flex_2;
+                    text-decoration: none;
+
+                    .card__picture {
+                        width: 20rem;
+                        height: 25rem;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 0 0 10% 0;
+                        
+                    }
+                    h3{
+                        color: black;
+                        font-size: $h3;
+                        margin: 1rem 0rem;
+                    }
+                    button{
+                        @include botones ($color-1);
+                        &:hover{
+                            @include botones ($color-2);
+                        }
+                    }
+                }
             }
         }
     }

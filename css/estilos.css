@@ -5,22 +5,34 @@
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif; }
 
-.container {
+.layaut__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 8.5rem auto 10.5rem;
   gap: 0px 0px;
   grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
-header .header__cuotas {
+header .header__cuotas, main .destacados__container {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-header .header__cuotas {
+main .card__contenedor-general .card__container-grid .card__1 a, main .card__contenedor-general .card__container-grid .card__2 a, main .card__contenedor-general .card__container-grid .card__3 a, main .card__contenedor-general .card__container-grid .card__4 a, main .card__contenedor-general .card__container-grid .card__5 a, main .card__contenedor-general .card__container-grid .card__6 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+header .header__cuotas, main .destacados__container {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+main .card__contenedor-general .card__container-grid .card__1 a, main .card__contenedor-general .card__container-grid .card__2 a, main .card__contenedor-general .card__container-grid .card__3 a, main .card__contenedor-general .card__container-grid .card__4 a, main .card__contenedor-general .card__container-grid .card__5 a, main .card__contenedor-general .card__container-grid .card__6 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 /*------HEADER-----*/
 header {
@@ -69,10 +81,16 @@ header {
             header .header__barra .header__enlaces ul li a:hover {
               color: darkviolet; }
 
-header .header__cuotas {
+header .header__cuotas, main .destacados__container {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+main .card__contenedor-general .card__container-grid .card__1 a, main .card__contenedor-general .card__container-grid .card__2 a, main .card__contenedor-general .card__container-grid .card__3 a, main .card__contenedor-general .card__container-grid .card__4 a, main .card__contenedor-general .card__container-grid .card__5 a, main .card__contenedor-general .card__container-grid .card__6 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 /*-----MAIN INDEX-----*/
 main {
@@ -80,7 +98,7 @@ main {
   main .hero {
     width: 100%;
     height: 80vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/pexels-mart-production-7679474.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero-index.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -102,7 +120,7 @@ main {
       main .hero .hero__text h2 {
         color: #b55ff3;
         text-transform: uppercase;
-        font-size: 2.5rem; }
+        font-size: 3rem; }
     main .hero .hero__boton {
       width: 100%;
       display: flex;
@@ -120,8 +138,8 @@ main {
         cursor: pointer;
         transition: .3s ease all; }
       main .hero .hero__boton .btn__abrir-popup:hover {
-        background-color: white;
-        color: blueviolet;
+        background-color: #d4025a;
+        color: white;
         transform: scale(1.06); }
       main .hero .hero__boton .popup__container {
         width: 100%;
@@ -138,7 +156,7 @@ main {
         visibility: hidden; }
         main .hero .hero__boton .popup__container .ventana__emergente-popup {
           width: 25rem;
-          height: 18rem;
+          height: 19rem;
           background: #ffffff;
           box-shadow: 11px 10px 22px 8px rgba(0, 0, 0, 0.71);
           -webkit-box-shadow: 11px 10px 22px 8px rgba(0, 0, 0, 0.71);
@@ -196,3 +214,182 @@ main {
           transform: translateY(0%); }
       main .hero .hero__boton #btn-popup {
         display: none; }
+  main .destacados__container {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    width: 100%; }
+    main .destacados__container h2 {
+      font-size: 3rem; }
+  main .card__contenedor-general h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem; }
+  main .card__contenedor-general .card__container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35rem 40rem;
+    gap: 3rem 0;
+    grid-template-areas: "card__1 card__2 card__3" "card__4 card__5 card__6"; }
+    main .card__contenedor-general .card__container-grid .card__1 a {
+      text-decoration: none; }
+      main .card__contenedor-general .card__container-grid .card__1 a .card__picture {
+        width: 20rem;
+        height: 25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 0 10% 0; }
+      main .card__contenedor-general .card__container-grid .card__1 a h3 {
+        color: black;
+        font-size: 2rem;
+        margin: 1rem 0rem; }
+      main .card__contenedor-general .card__container-grid .card__1 a button {
+        padding: 0.5rem;
+        border: none;
+        color: black;
+        background: blueviolet;
+        border-radius: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: .3s ease all; }
+        main .card__contenedor-general .card__container-grid .card__1 a button:hover {
+          background-color: #d4025a;
+          color: white;
+          transform: scale(1.06); }
+    main .card__contenedor-general .card__container-grid .card__2 a {
+      text-decoration: none; }
+      main .card__contenedor-general .card__container-grid .card__2 a .card__picture {
+        width: 20rem;
+        height: 25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 0 10% 0; }
+      main .card__contenedor-general .card__container-grid .card__2 a h3 {
+        color: black;
+        font-size: 2rem;
+        margin: 1rem 0rem; }
+      main .card__contenedor-general .card__container-grid .card__2 a button {
+        padding: 0.5rem;
+        border: none;
+        color: black;
+        background: blueviolet;
+        border-radius: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: .3s ease all; }
+        main .card__contenedor-general .card__container-grid .card__2 a button:hover {
+          background-color: #d4025a;
+          color: white;
+          transform: scale(1.06); }
+    main .card__contenedor-general .card__container-grid .card__3 a {
+      text-decoration: none; }
+      main .card__contenedor-general .card__container-grid .card__3 a .card__picture {
+        width: 20rem;
+        height: 25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 0 10% 0; }
+      main .card__contenedor-general .card__container-grid .card__3 a h3 {
+        color: black;
+        font-size: 2rem;
+        margin: 1rem 0rem; }
+      main .card__contenedor-general .card__container-grid .card__3 a button {
+        padding: 0.5rem;
+        border: none;
+        color: black;
+        background: blueviolet;
+        border-radius: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: .3s ease all; }
+        main .card__contenedor-general .card__container-grid .card__3 a button:hover {
+          background-color: #d4025a;
+          color: white;
+          transform: scale(1.06); }
+    main .card__contenedor-general .card__container-grid .card__4 a {
+      text-decoration: none; }
+      main .card__contenedor-general .card__container-grid .card__4 a .card__picture {
+        width: 20rem;
+        height: 25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 0 10% 0; }
+      main .card__contenedor-general .card__container-grid .card__4 a h3 {
+        color: black;
+        font-size: 2rem;
+        margin: 1rem 0rem; }
+      main .card__contenedor-general .card__container-grid .card__4 a button {
+        padding: 0.5rem;
+        border: none;
+        color: black;
+        background: blueviolet;
+        border-radius: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: .3s ease all; }
+        main .card__contenedor-general .card__container-grid .card__4 a button:hover {
+          background-color: #d4025a;
+          color: white;
+          transform: scale(1.06); }
+    main .card__contenedor-general .card__container-grid .card__5 a {
+      text-decoration: none; }
+      main .card__contenedor-general .card__container-grid .card__5 a .card__picture {
+        width: 20rem;
+        height: 25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 0 10% 0; }
+      main .card__contenedor-general .card__container-grid .card__5 a h3 {
+        color: black;
+        font-size: 2rem;
+        margin: 1rem 0rem; }
+      main .card__contenedor-general .card__container-grid .card__5 a button {
+        padding: 0.5rem;
+        border: none;
+        color: black;
+        background: blueviolet;
+        border-radius: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: .3s ease all; }
+        main .card__contenedor-general .card__container-grid .card__5 a button:hover {
+          background-color: #d4025a;
+          color: white;
+          transform: scale(1.06); }
+    main .card__contenedor-general .card__container-grid .card__6 a {
+      text-decoration: none; }
+      main .card__contenedor-general .card__container-grid .card__6 a .card__picture {
+        width: 20rem;
+        height: 25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0 0 10% 0; }
+      main .card__contenedor-general .card__container-grid .card__6 a h3 {
+        color: black;
+        font-size: 2rem;
+        margin: 1rem 0rem; }
+      main .card__contenedor-general .card__container-grid .card__6 a button {
+        padding: 0.5rem;
+        border: none;
+        color: black;
+        background: blueviolet;
+        border-radius: 5%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: .3s ease all; }
+        main .card__contenedor-general .card__container-grid .card__6 a button:hover {
+          background-color: #d4025a;
+          color: white;
+          transform: scale(1.06); }
